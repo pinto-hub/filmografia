@@ -16,6 +16,15 @@ public class Pelicula {
 		this.titulo = titulo;
 		this.fecha = fecha;
 	}
+	
+	
+
+	public Pelicula(int id, String director, String titulo, String fecha) {
+		this.id = id;
+		this.director = director;
+		this.titulo = titulo;
+		this.fecha = fecha;
+	}
 
 	public int getId() {
 		return id;

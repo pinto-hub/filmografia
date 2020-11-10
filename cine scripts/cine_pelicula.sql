@@ -28,7 +28,7 @@ CREATE TABLE `pelicula` (
   `titulo` varchar(128) DEFAULT NULL,
   `fecha` varchar(128) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `pelicula` (
 
 LOCK TABLES `pelicula` WRITE;
 /*!40000 ALTER TABLE `pelicula` DISABLE KEYS */;
-INSERT INTO `pelicula` VALUES (1,'Paco','La vida de paco','12-04-2004'),(2,'Paco','El secreto de paco','01-10-2012'),(3,'Elena','Sorpresa por navidad','15-11-2002'),(4,'Elena','La viuda negra, negra de verdad','20-09-2020');
+INSERT INTO `pelicula` VALUES (1,'Paco','La vida de paco','12-04-2004'),(2,'Paco','El secreto de paco','01-10-2012'),(3,'Elena','Sorpresa por navidad','15-11-2002'),(4,'Elena','La viuda negra, negra de verdad','20-09-2020'),(5,'Dani Guiza','Torrente','01-01-1998'),(6,'Fulanito','Salvar al soldado Fulanito','25-05-1994');
 /*!40000 ALTER TABLE `pelicula` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-11-09 14:27:00
+-- Dump completed on 2020-11-10 11:59:49

@@ -13,16 +13,21 @@
 </head>
 <body>
 	<div class="container">
-		<table class="table table-striped table-dark overflow-auto">
-				<thead class="thead-light text-dark modal-body">
+		<table class="table table-striped table-light">
+				<thead class="thead-light text-dark">
+					<tr class="text-center">
+						<th colspan="2" class="bg-dark text-light"><h4>${director}</h4></th>
+					</tr>
 					<tr class="lead text-center">
-						<th>${director}</th>
+					<th>Peliculas</th>
+					<th>Fechas</th>
 					</tr>
 				</thead>
 				<tbody>
 					<c:forEach var="pelicula" items="${peliculas}">
 						<tr class="lead text-center">
 							<td>${pelicula.titulo}</td>
+							<td>${pelicula.fecha}</td>
 						</tr>
 					</c:forEach>
 				</tbody>

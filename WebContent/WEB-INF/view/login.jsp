@@ -16,15 +16,15 @@
 	<form action="${pageContext.request.contextPath}/peliculaControlador?accion=login" method="POST">
 	
 	<label for="director">Usuario: </label>
-	<input type="text" name="usuario"/>
-	<label for="director">Contraseña: </label>
-	<input type="text" name="pass"/>
-	<input class="btn btn-primary ml-4" type="submit" value="Buscar">
-	<p style="color: red;">${error}</p>
+	<input class="form-control col-3" type="text" name="usuario"/><br><br>
+	<label for="director">Pass: </label>
+	<input class="form-control col-3" type="text" name="pass"/><br><br>
+	<input class="btn btn-primary ml-4" type="submit" value="Ingresar">
+	<a class="btn btn-secondary ml-3" href="index.jsp">Volver</a>	
 	</form>
+	<p class="mt-3" style="color: red;">${error}</p>
 	</div>
-	
-	<a class="btn btn-secondary mt-3 ml-3" href="index.jsp">Volver</a>
+
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"></script>

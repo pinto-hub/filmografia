@@ -11,13 +11,14 @@
 	crossorigin="anonymous">
 </head>
 <body>
-	<div class="container col-12 mb-5">
+	<div class="container col-12 mb-5 ">
+	<h3 class="mt-5">Ejercicio CRUD Cine</h3>
 		<div class="d-flex flex-column col-2 mt-5">
 		<a class="btn btn-warning" href="${pageContext.request.contextPath}/peliculaControlador?accion=info">Info</a>
 		
 		<a class="btn btn-success mt-3" href="${pageContext.request.contextPath}/peliculaControlador?accion=consulta">Consulta</a>
 		
-		<a class="btn btn-success mt-3" href="${pageContext.request.contextPath}/peliculaControlador?accion=login">Login</a>
+		<a class="btn btn-primary mt-3" href="${pageContext.request.contextPath}/peliculaControlador?accion=login">Login</a>
 		</div>
 	</div>
 	

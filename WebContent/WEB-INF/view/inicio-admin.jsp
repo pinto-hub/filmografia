@@ -4,18 +4,26 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Informacion</title>
+<title>Ejercicio cine</title>
+
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 	crossorigin="anonymous">
 </head>
 <body>
-	<div class="container col-12">
-	<p class="lead mt-5">Ejercicio practico sobre servlets, jsp y bbdd para la asignatura de servidor.<p>
-	<small class="text-muted">- Jesus Pinto Hermosell</small>
+	<div class="container col-12 mt-5">
+	<h4>Bienvenido: ${nombre}</h4>
+	<a class="btn btn-danger mt-3 ml-3" href="index.jsp">Salir</a>
+	<a class="btn btn-success mt-3 ml-3" href="${pageContext.request.contextPath}/peliculaControlador?accion=mantenimiento">Mantenimiento de peliculas</a>
+	<a class="btn btn-primary text-light mt-3 ml-3" data-toggle="modal" data-target="#insertarAdmin">Insertar Administrador</a>
+	<p class="mt-3" style="color: red;">${error}</p>
+	<p class="mt-3" style="color: blue;">${correcto}</p>
 	</div>
-	<a class="btn btn-primary ml-5 mt-3" href="index.jsp">Volver</a>
+	
+	
+	<jsp:include page="/WEB-INF/view/insertar-admin.jsp" />
+	
 	
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
